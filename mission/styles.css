@@ -1,0 +1,44 @@
+body {
+    max-width: 1200px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#content {
+    max-width: 600px;
+    border: 1px solid;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 20px;
+    padding: 50px 100px 50px 100px;
+    line-height: 1.5em;
+}
+header {
+    letter-spacing: .15em;
+    text-align: center;
+    border-bottom: 1px solid;
+    padding-bottom: 0;
+}
+h3 {
+    color: #006EB6;
+    font-size: 0.9em;
+}
+main {
+    padding: 30px 20px;
+}
+li {
+    margin: 10px 0;
+}
+.italic {
+    font-style: italic;
+}
+img {
+    width: 150px;
+    margin: 0 auto;
+    align-self: center;
+}
+footer {
+    text-align: center;
+}
+.dark {
+    background-color: black;
+    color: white;
+}

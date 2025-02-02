@@ -43,7 +43,7 @@ const articles = [
 const mainTemplate = function(title, imgSrc, imgAlt, description) {
     return `
     <section class="book">
-        <h1 class="title">${title}</h1>
+        <h2 class="title">${title}</h2>
         <img src=${imgSrc} alt=${imgAlt}>
         <p class="description">${description}</p>
     </section>

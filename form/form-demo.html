@@ -1,0 +1,85 @@
+<!-- form-demo.html -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Checkout Form</title>
+        <link rel="stylesheet" href="form-demo.css" />
+        <script src="form-demo.js" defer></script>
+    </head>
+    <body>
+        <header><h1>Checkout</h1></header>
+        <main>
+            <section class="errors"></section>
+            <form id="checkoutForm" action="completed.html">
+                <p><label for="name">Name:</label></p>
+                <p><input type="text" name="name" id="name" required></p>
+                <p><label for="email">Email:</label></p>
+                <p><input type="text" name="email" id="email" required></p>
+                <p><label for="address">Address:</label></p>
+                <p><input type="text" name="address" id="address"></p>
+                <p><label for="payment_method">Payment Method:</label></p>
+                <p>
+                    <select name="payment_method" id="payment_method" required>
+                        <option value="">Choose One</option>
+                        <option value="credit">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                    </select>
+                </p>
+                <p class="hide" id="credit"><label for="credit-card-number">Credit Card Number:</label>
+                    <input type="text" name="credit-card-number" id="credit-card-number" required></p>
+                <p class="hide" id="paypal"><label for="paypal-username">PayPal Username:</label>
+                    <input type="email" name="paypal-username" id="paypal-username" required></p>
+                <button type="submit">Place Order</button>
+
+            </form>
+        </main>
+    </body>
+</html>
+
+
+<!-- <form id="checkoutForm" action="completed.html">
+    <p><label for="name">Name</label>
+    <input type="text" id="name" name="name" required></p>
+
+    <p><label for="newsletter">Sign up for newsletter</label>
+    <input type="checkbox" id="newsletter" name="newsletter"></p>
+    
+    <fieldset>
+        <legend>Interests</legend>
+        <p><label for="games">Games</label>
+        <input type="checkbox" id="games" name="interests"></p>
+
+        <p><label for="comics">Comics</label>
+        <input type="checkbox" id="comics" name="interests"></p>
+
+        <p><label for="camping">Camping</label>
+        <input type="checkbox" id="camping" name="interests"></p>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+</form> -->
+
+<!-- <form id="checkoutForm" action="completed.html">
+    <p><label for="name">Name:</label></p>
+    <p><input type="text" name="name" id="name" required></p>
+    <p><label for="email">Email:</label></p>
+    <p><input type="text" name="email" id="email" required></p>
+    <p><label for="address">Address:</label></p>
+    <p><input type="text" name="address" id="address"></p>
+    <p><label for="payment method">Payment Method:</label></p>
+    <p>
+        <select name="payment method" id="payment method" required>
+            <option value="">Choose One</option>
+            <option value="credit">Credit Card</option>
+            <option value="paypal">PayPal</option>
+        </select>
+    </p>
+    <p><label for="credit-card-number">Credit Card Number:</label></p>
+    <p><input type="text" name="credit-card-number" id="credit-card-number"></p>
+    <p><label for="paypal-username">PayPal Username:</label></p>
+    <p><input type="email" name="paypal-username" id="paypal-username"></p>
+    <button type="submit">Place Order</button>
+
+</form> -->

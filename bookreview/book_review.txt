@@ -1,0 +1,4 @@
+Purpose: create a review site for books, focused on age appropriateness - similar to common sense media (for movies and tv shows)
+Audience: parents with children (10-16) who read (or whom they would like to read)
+The audience is hoping to find good options to present to their children for books they can read - books they can trust will be appropriate for their children
+Possible features: sections for different ages - or at least age being an attribute that can be seen and / or filtered; reviews written by other concerned parents / parties; different categories (as parents have different ideas of age appropriate) such as drugs/alcohol, violence, sex and nudity, good role models, etc.; reviews by other youth/young adults that other youth can read

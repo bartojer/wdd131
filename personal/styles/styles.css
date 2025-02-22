@@ -37,6 +37,7 @@ p {
 }
 
 #menu {
+    display: unset;
     margin: 0 auto;
     text-align: center;
     background-color: var(--navbar-background);
@@ -44,7 +45,7 @@ p {
     font-size: 1.5em;
     border: none;
     background: none;
-    padding: 1em;
+    padding: 0.5em;
     z-index: 10;
 }
 #menu:hover {
@@ -54,10 +55,11 @@ p {
 }
 
 .menu-toggle {
-    display: none;
+    display: block;
+    background-color: var(--navbar-background);
 }
 .menu-toggle.hidden {
-    display: block;
+    display: none;
 }
 
 .nav {
@@ -67,16 +69,18 @@ p {
     padding: 0;
     margin: 0;
     width: 100%;
+    row-gap: 1em;
 }
 .nav li {
     flex: 1 1 auto;
     text-align: center;
+    
 }
 .nav li a {
     background-color: var(--navbar-background);
     color: var(--navbar);
     border: none;
-    padding: 1em;
+    padding: 0.5em 1em;
     width: 100%;
     text-decoration: none;
 }
@@ -208,6 +212,14 @@ footer p a:hover {
 
 
 @media screen and (min-width: 750px) {
+    #menu {
+        display: none;
+    }
+    .menu-toggle.hidden {
+        display: unset;
+        display: block;
+        background-color: var(--navbar-background);
+    }
     .nav {
         display: unset;
         display: flex;
@@ -254,10 +266,7 @@ footer p a:hover {
         width: 300px;
     }
 
-    #menu {
-        display: none;
-    }
-
+    
     /* journal */
 
     .entry-card {

@@ -13,15 +13,16 @@ const journalEntries = [
         year: 2024,
         month: 11,
         day: "",
-        imgSrc: "img/bag-of-marigolds.jpeg",
+        imgSrc: "img/trimming-marigolds.webp",
         imgAlt: "bag of trimmed marigolds",
-        text: `Living in the Rocky Mountain West, the winter season rings in watery skies, bitter breezes that are always in motion, and dormant gardens. This year I was fortunate to participate in a community garden. I tended to a small plot where I grew various dye plants and botanicals to use in dye projects, as well as some “just-for-fun” edibles where I could fit them. That was August. It 11. Most of the leaves have fallen, gardens have been mulched, now what? I remember my last marigold harvest of the year. However, at the time, I had no idea it would be my last time gathering those vibrant blossoms to then dry in my small 3rd story flat and wait for my next creative project. I was enjoying the growing season so much that the time past me by. The next time I went to harvest I thought to myself, “this will probably be my last cutting of the year - it’s a cold morning.” I arrived to my plot to discover a thick layer of ice coating all of my marigold blossoms and indigo leaves. Goodbye growing season.`
+        text: `Living in the Rocky Mountain West, the winter season rings in watery skies, bitter breezes that are always in motion, and dormant gardens. This year I was fortunate to participate in a community garden. I tended to a small plot where I grew various dye plants and botanicals to use in dye projects, as well as some “just-for-fun” edibles where I could fit them. That was August. It 11. Most of the leaves have fallen, gardens have been mulched, now what? I remember my last marigold harvest of the year.
+        However, at the time, I had no idea it would be my last time gathering those vibrant blossoms to then dry in my small 3rd story flat and wait for my next creative project. I was enjoying the growing season so much that the time past me by. The next time I went to harvest I thought to myself, “this will probably be my last cutting of the year - it’s a cold morning.” I arrived to my plot to discover a thick layer of ice coating all of my marigold blossoms and indigo leaves. Goodbye growing season.`
     },
     {
         year: 2024,
         month: 11,
         day: "",
-        imgSrc: "img/trimming-marigolds.jpeg",
+        imgSrc: "img/bag-of-marigolds.webp",
         imgAlt: "woman triming marigolds",
         text: `The days are now shorter. I spend more time indoors than out. Sometimes I feel as though I am hibernating. Lately I have experienced what I would call a creative hibernation or dormancy. Since I am not out growing, harvesting, preserving, or hanging my dye projects to dry in the summer sun – I have stopped creating all together. My mind says, “I’ll wait until the spring to create”. My soul on the other hand is starving of what creating with nature offers: stillness, patience, unity between man and earth.`
     },
@@ -29,7 +30,7 @@ const journalEntries = [
         year: 2024,
         month: 11,
         day: "",
-        imgSrc: "img/winter_placeholder.jpg",
+        imgSrc: "img/winter_placeholder.webp",
         imgAlt: "cloudy sky over a city",
         text: `Winter has brought watery grey skies and short days with her, but she also brings new inspiration for my next dye lot!`
     },
@@ -49,8 +50,8 @@ I spent 24 hours mordanting all of the thrifted pieces of clothing I bought 5 mo
         year: 2025,
         month: 2,
         day: "",
-        imgSrc: "",
-        imgAlt: "",
+        imgSrc: "img/black_bean_test_fabric.webp",
+        imgAlt: "white fabric with dark purple spots",
         text: `Black Beans\n
 I have recently dived back into my natural dye literature and have discovered some beautifully talented artists on Instagram. This month I have decided to take the pressure off of the outcome and simply enjoy the process of creation. This quick project had me marveling in the magnificence of the small (beans) things of the world. Black beans are high in anthocyanins, which are water soluble pigments.\n
 I gave my Alum mordanted cotton another shot. I soaked the fabric in water and rung out any excess. This should be done before attempting to transfer any pigment to textile as the water opens up the fibers and creates more space for dye particles to cling. Lacking any rhyme or reason I scattered dry black beans across half of the textile – keeping in mind that the design I create on one side will be mirrored on the other. This is done by folding the cotton over onto itself. I then rolled it up tightly trying my best to keep the beans, especially the ones around the perimeter, in place. Once you have it rolled up like a snack, twist it into itself forming a swirl and secure with twine.\n
@@ -61,8 +62,8 @@ Because black beans are high in anthocyanins, which are water soluble pigments, 
         year: 2025,
         month: 2,
         day: "",
-        imgSrc: "",
-        imgAlt: "",
+        imgSrc: "img/steaming_fabric.webp",
+        imgAlt: "steaming white fabric by open window",
         text: `Scouring!\n
 Scouring is a crucial step in the natural dyeing process. Choosing not to prepare your fabric with a proper scour will result in unevenness of color, pour saturation, and quick fade after washing and sun exposure. 
 `
@@ -168,7 +169,6 @@ function journalPageTemplate(month, year) {
     let html = journalHeaderTemplate(month);
     let monthEntries = journalEntries.filter(entry => entry.month === month && entry.year === year);
     html += monthEntries.map(journalCardTemplate).join('');
-    // console.log(html);
 
     const journalContent = document.querySelector(".entries");
     if (journalContent) {
@@ -189,16 +189,11 @@ document.querySelector("#february_button").addEventListener("click", () => {
     journalPageTemplate(2, 2025);
 })
 
+function init() {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth() + 1;
+    const currentYear = currentDate.getFullYear();
+    journalPageTemplate(currentMonth, currentYear);
+}
 
-        //     <p>
-        //         I remember my last marigold harvest of the year. However, at the time, I had no idea it would be my last time gathering those vibrant blossoms to then dry in my small 3rd story flat and wait for my next creative project. I was enjoying the growing season so much that the time past me by. The next time I went to harvest I thought to myself, “this will probably be my last cutting of the year – it’s a cold morning.” I arrived to my plot to discover a thick layer of ice coating all of my marigold blossoms and indigo leaves. Goodbye growing season. 
-        //     </p>
-        // </div>
-        // <img src="img/trimming-marigolds.jpeg" alt="woman triming marigolds">
-        // <p class="winter">
-        //     The days are now shorter. I spend more time indoors than out. Sometimes I feel as though I am hibernating. Lately I have experienced what I would call a creative hibernation or dormancy. Since I am not out growing, harvesting, preserving, or hanging my dye projects to dry in the summer sun – I have stopped creating all together. My mind says, “I’ll wait until the spring to create”. My soul on the other hand is starving of what creating with nature offers: stillness, patience, unity between man and earth. 
-        // </p>
-        // <img src="img/winter_placeholder.jpg" alt="cloudy sky over a city">
-        // <p>
-        //     Winter has brought watery grey skies and short days with her, but she also brings new inspiration for my next dye lot!
-        // </p>
+init()

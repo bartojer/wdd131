@@ -38,7 +38,7 @@ const journalEntries = [
         year: 2025,
         month: 1,
         day: "",
-        imgSrc: "img/soy-milk-mordant.jpg",
+        imgSrc: "img/soy-milk-mordant.webp",
         imgAlt: "pot of soy milk pre-treatment with white fabric inside",
         text: `The Mystery of Mordanting\n
 Back in late summer of 2024, my husband and I went on our first child-free date since we welcomed our wonderful daughter to the world. Though the outing was brief, my creative spark was reignited after scoring some wonderful cotton pieces at a local second hand shop. I spent the next several months churning over what I might create on these unique items – definitely overthinking it.\n

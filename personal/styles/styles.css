@@ -185,6 +185,7 @@ footer p a:hover {
 }
 .entry-card img  {
     padding: 1em;
+    width: 500px;
 }
 .entry-card p {
     text-align: start;

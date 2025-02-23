@@ -13,13 +13,9 @@
     --background-color: rgb(244, 244, 234);
     /* #b77f3a */
     --navbar-background:var(--dark-blue);
-    --navbar:var(--gold);
-    --second-nav-background:var(--light-blue);
-    
-    --primary-color: var(--light-blue);
-    --secondary-color: var(--medium-red);
-    --accent1-color: var(--darkish-red);
-    --accent2-color: var(--gold);
+    /* --navbar:var(--gold); */
+    --navbar:white;
+
 
 
   /* change the values below to your chosen font(s) */

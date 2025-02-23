@@ -252,8 +252,15 @@ footer p a:hover {
         margin: 1.5em;
     }
 
+    .bottom {
+        text-align: center;
+        align-items: center;
+    }
     .bottom p {
         text-align: justify;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2em;
     }
 
     footer {

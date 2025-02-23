@@ -5,8 +5,11 @@
 //     day: ,
 //     imgSrc: "",
 //     imgAlt: "",
-//     text: ""
+//     text: ``
 // },
+
+
+
 
 const journalEntries = [
     {
@@ -15,8 +18,8 @@ const journalEntries = [
         day: "",
         imgSrc: "img/trimming-marigolds.webp",
         imgAlt: "bag of trimmed marigolds",
-        text: `Living in the Rocky Mountain West, the winter season rings in watery skies, bitter breezes that are always in motion, and dormant gardens. This year I was fortunate to participate in a community garden. I tended to a small plot where I grew various dye plants and botanicals to use in dye projects, as well as some “just-for-fun” edibles where I could fit them. That was August. It 11. Most of the leaves have fallen, gardens have been mulched, now what? I remember my last marigold harvest of the year.
-        However, at the time, I had no idea it would be my last time gathering those vibrant blossoms to then dry in my small 3rd story flat and wait for my next creative project. I was enjoying the growing season so much that the time past me by. The next time I went to harvest I thought to myself, “this will probably be my last cutting of the year - it’s a cold morning.” I arrived to my plot to discover a thick layer of ice coating all of my marigold blossoms and indigo leaves. Goodbye growing season.`
+        text: `Living in the Rocky Mountain West, the winter season rings in watery skies, bitter breezes that are always in motion, and dormant gardens. This year I was fortunate to participate in a community garden. I tended to a small plot where I grew various dye plants and botanicals to use in dye projects, as well as some “just-for-fun” edibles where I could fit them. That was August. It 11. Most of the leaves have fallen, gardens have been mulched, now what? I remember my last marigold harvest of the year.\n
+However, at the time, I had no idea it would be my last time gathering those vibrant blossoms to then dry in my small 3rd story flat and wait for my next creative project. I was enjoying the growing season so much that the time past me by. The next time I went to harvest I thought to myself, “this will probably be my last cutting of the year - it’s a cold morning.” I arrived to my plot to discover a thick layer of ice coating all of my marigold blossoms and indigo leaves. Goodbye growing season.`
     },
     {
         year: 2024,
@@ -33,6 +36,15 @@ const journalEntries = [
         imgSrc: "img/winter_placeholder.webp",
         imgAlt: "cloudy sky over a city",
         text: `Winter has brought watery grey skies and short days with her, but she also brings new inspiration for my next dye lot!`
+    },
+    {
+        year: 2024,
+        month: 11,
+        day: '',
+        imgSrc: "",
+        imgAlt: "",
+        text: `Let's chat about the do's and don'ts of extracting dye from these parts of the avocado.\n
+There are two methods to saving or preserving avocado pits and skins. First, any excess fruit must be scrubbed off if you are to avoid mold in the preserving process. Second, they need to be set out to air dry in a well ventilated area. From here, you have two options. You can either store your now clean and dry pits and skins in a container in the freezer or place them in a ventilated container (cardboard with slits of holes cut in it works great) and keep in a cool, dry place. I personally don't have adequate space in my freezer, so I practice the second method and have never had an issue with my dye turning out pink and perfect!`
     },
     {
         year: 2025,
